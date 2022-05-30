@@ -34,7 +34,8 @@ h1, h3{
 .r_boxCol p {
   font-size: 1em;
 }
-.r_boxCol img{
+
+.r_boxColImg{
   height: 150px;
 }
 
@@ -74,7 +75,6 @@ h1, h3{
   margin: 1rem 0 2rem auto;
 }
 
-
 .r_boxColHead img{
   display: block;
   margin: 0 auto;
@@ -105,9 +105,12 @@ h1, h3{
   text-align: center;
   margin: 0;
 }
-.r_box2ColCreate > div{
-}
 
+/* block 3 */
+
+.r_block3Content{
+  padding: 30rem;
+}
 
 /* calendar */
 
@@ -196,7 +199,4 @@ h1, h3{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   /* border: 0.5px solid red; */
-}
-.r_boxColHead *{
-  /* background-color: #000f30; */
 }
