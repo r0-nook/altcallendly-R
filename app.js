@@ -18,21 +18,19 @@
 // }
 
 
-let r_bookSave = {};
+let r_bookSaveH, r_bookSaveTime, r_bookSaveLocation, r_bookSaveAbout;
 
 const r_Book=()=>{
   // take
-  r_bookSave = {
-    H: document.getElementById('r_box1ColH3').innerHTML,
-    Time: document.getElementById('r_box1ColTime').innerHTML,
-    Location: document.getElementById('r_box1ColLocation').innerHTML,
-    About: document.getElementById('r_box1ColAbout').innerHTML
-  }
+    r_bookSaveH = document.querySelectorAll('.r_boxCol1 h3').innerHTML;
+    r_bookSaveTime = document.getElementById('r_box1ColTime').innerHTML;
+    r_bookSaveLocation = document.getElementById('r_box1ColLocation').innerHTML;
+    r_bookSaveAbout = document.getElementById('r_box1ColAbout').innerHTML;
   // add
-  document.getElementById('r_bookSaveH').innerHTML = r_bookSave.H;
-  document.getElementById('r_bookSaveTime').innerHTML = r_bookSave.Time;
-  document.getElementById('r_bookSaveLocation').innerHTML = r_bookSave.Location;
-  document.getElementById('r_bookSaveAbout').innerHTML = r_bookSave.About;
+  document.getElementById('r_bookH').innerHTML = r_bookSaveH[0];
+  document.getElementById('r_bookTime').innerHTML = r_bookSaveTime;
+  document.getElementById('r_bookLocation').innerHTML = r_bookSaveLocation;
+  document.getElementById('r_bookAbout').innerHTML = r_bookSaveAbout;
 }
 
 
